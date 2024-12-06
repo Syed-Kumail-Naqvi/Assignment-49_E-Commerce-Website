@@ -71,3 +71,32 @@
 
 
 })()
+
+var users = JSON.parse(window.localStorage.getItem("USERS")) || [
+	{
+	  userName: "Admin",
+	  userEmail: "admin@gmail.com",
+	  userPhone: "03123456",
+	  userPassword: 123,
+	  userCity: "Karachi",
+	  usersAddToCarts: [],
+	},
+  ];
+  console.log(users);
+  
+  // for storing add to carts products
+  var addToCartArray =
+	JSON.parse(window.localStorage.getItem("addToCartArray")) || [];
+  console.log(addToCartArray);
+
+  function signupDataStore() {
+	// obj for users data
+	let usersData = {
+	  userName: document.getElementById("userName").value,
+	  userEmail: document.getElementById("userEmail").value,
+	  userPhone: document.getElementById("userPhone").value,
+	  userPassword: document.getElementById("userPassword").value,
+	  userCity: document.getElementById("userCity").value,
+	  usersAddToCarts: [],
+	};
+}

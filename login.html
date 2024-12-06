@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="login">
+      <!-- inner-box is here -->
+      <div class="inner-box">
+        <!-- header -->
+        <header>
+          <div class="signup-header">
+            <h1>LOG IN</h1>
+          </div>
+        </header>
+
+        <!-- Sign body -->
+        <main class="signup-body">
+          <!-- form -->
+          <form>
+            <div class="input">
+              <label for="userLoginEmail">Email</label>
+              <input type="email" name="YourEmail" id="userLoginEmail" />
+            </div>
+
+            <div class="input">
+              <label for="userLoginPassword">Password</label>
+              <input
+                type="password"
+                name="YourPassword"
+                id="userLoginPassword"
+              />
+
+              <p>Forgot your password?</p>
+            </div>
+
+            <!-- input button is here -->
+            <div class="input">
+              <button type="button" class="button" onclick="loginMatchData()">
+                Login
+              </button>
+            </div>
+
+            <div class="input">
+              <p>
+                Don't have an account ? <a href="./signUp.html"> Sign up</a>
+              </p>
+            </div>
+          </form>
+        </main>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,9 +1,4 @@
-/*
-* Template Name: UntreeStore
-* Template Author: Untree.co
-* Author URI: https://untree.co/
-* License: https://creativecommons.org/licenses/by/3.0/
-*/
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 body {
   overflow-x: hidden;
@@ -16,6 +11,128 @@ body {
   color: #6a6a6a;
   font-size: 14px;
   background-color: #eff2f1; }
+
+/* sign up styling */
+.signUp,.login {
+
+  background-color: var(--color3);
+  height: 100vh;
+  padding-top: 60px;
+
+}
+
+/* Styling of Inner-box */
+.inner-box{
+
+  width: 600px;
+  margin: auto;
+  position: relative;
+  padding: 20px 50px;
+
+  border-radius: 5px;
+
+  box-shadow: 0px 0px 3px 0px  #8b8b8b;
+
+  background-color: white;
+
+
+  backdrop-filter: blur(10px);
+
+  z-index: 2;
+
+}
+
+
+.signup-header h1{
+  font-size: 1.5rem;
+  word-spacing: 5px;
+  padding-bottom: 15px;
+  color: #131010;
+  text-align: center;
+}
+
+/* Stylin of signup-body */
+
+.signup-body{
+
+  margin: 20px 0;
+
+}
+
+.signup-body .input{
+
+  margin: 25px 0;
+
+}
+
+.signup-body .input label{
+
+  display: block;
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+}
+
+.signup-body>form>.input>input ,.signup-body select{
+
+  width: 100%;
+
+  padding: 10px;
+
+  border: 1px solid gray;
+
+  border-radius: 5px;
+
+  font-size: 1rem;
+
+  margin-top: 5px;
+
+}
+
+.button{
+
+  border: none;
+
+  background-color: #3498db;
+
+  color: white;
+
+  cursor: pointer;
+
+  width: 100%;
+
+  padding: 10px;
+
+  border-radius: 5px;
+
+  font-size: 1rem;
+
+  margin-top: 5px;
+
+}
+
+.input p {
+
+  /* text-align: center; */
+  color: rgb(82, 82, 82);
+
+}
+
+.input p a {
+
+  text-decoration: none;
+  color: rgb(0, 116, 248);
+  
+}
+/* Hover State of Submit */
+
+.button:hover{
+
+  background-color: #206796;
+  
+}
 
 a {
   text-decoration: none;
@@ -119,7 +236,7 @@ a {
         font-size: 54px; } }
   .hero p {
     color: rgba(255, 255, 255, 0.5);
-    margin-botom: 30px; }
+    margin-bottom: 30px; }
   .hero .hero-img-wrap {
     position: relative; }
     .hero .hero-img-wrap img {
@@ -316,7 +433,7 @@ a {
   .we-help-section .imgs-grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[27];
+    -ms-grid-columns: (1fr, 27);
     grid-template-columns: repeat(27, 1fr);
     position: relative; }
     .we-help-section .imgs-grid:before {
