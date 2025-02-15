@@ -23,7 +23,7 @@
 		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
 
 			<div class="container">
-				<a class="navbar-brand" href="index.html">Furni<span>.</span></a>
+				<a class="navbar-brand" href="./main.html">Furni<span>.</span></a>
 
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -32,7 +32,7 @@
 				<div class="collapse navbar-collapse" id="navbarsFurni">
 					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
 						<li class="nav-item ">
-							<a class="nav-link" href="index.html">Home</a>
+							<a class="nav-link" href="./main.html">Home</a>
 						</li>
 						<li><a class="nav-link" href="shop.html">Shop</a></li>
 						<li><a class="nav-link" href="about.html">About us</a></li>
@@ -57,7 +57,7 @@
 					<div class="row justify-content-between">
 						<div class="col-lg-5">
 							<div class="intro-excerpt">
-								<h1>Cart</h1>
+								<h1>Your Cart</h1>
 							</div>
 						</div>
 						<div class="col-lg-7">
@@ -86,8 +86,8 @@
                           <th class="product-remove">Remove</th>
                         </tr>
                       </thead>
-                      <tbody>
-                        <tr>
+                      <tbody id="cardarea">
+                        <!-- <tr>
                           <td class="product-thumbnail">
                             <img src="images/product-1.png" alt="Image" class="img-fluid">
                           </td>
@@ -133,7 +133,7 @@
                           </td>
                           <td>$49.00</td>
                           <td><a href="#" class="btn btn-black btn-sm">X</a></td>
-                        </tr>
+                        </tr> -->
                       </tbody>
                     </table>
                   </div>
@@ -143,14 +143,14 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="row mb-5">
-                    <div class="col-md-6 mb-3 mb-md-0">
+                    <!-- <div class="col-md-6 mb-3 mb-md-0">
                       <button class="btn btn-black btn-sm btn-block">Update Cart</button>
-                    </div>
+                    </div> -->
                     <div class="col-md-6">
-                      <button class="btn btn-outline-black btn-sm btn-block">Continue Shopping</button>
+                      <a href="./shop.html"><button class="btn btn-outline-black btn-sm btn-block">Continue Shopping</button></a>
                     </div>
                   </div>
-                  <div class="row">
+                  <!-- <div class="row">
                     <div class="col-md-12">
                       <label class="text-black h4" for="coupon">Coupon</label>
                       <p>Enter your coupon code if you have one.</p>
@@ -161,7 +161,7 @@
                     <div class="col-md-4">
                       <button class="btn btn-black">Apply Coupon</button>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
                 <div class="col-md-6 pl-5">
                   <div class="row justify-content-end">
@@ -171,7 +171,7 @@
                           <h3 class="text-black h4 text-uppercase">Cart Totals</h3>
                         </div>
                       </div>
-                      <div class="row mb-3">
+                      <!-- <div class="row mb-3">
                         <div class="col-md-6">
                           <span class="text-black">Subtotal</span>
                         </div>
@@ -186,11 +186,11 @@
                         <div class="col-md-6 text-right">
                           <strong class="text-black">$230.00</strong>
                         </div>
-                      </div>
+                      </div> -->
         
                       <div class="row">
                         <div class="col-md-12">
-                          <button class="btn btn-black btn-lg py-3 btn-block" onclick="window.location='checkout.html'">Proceed To Checkout</button>
+                          <button class="btn btn-black btn-lg py-3 btn-block" id="order" onclick="order()">Proceed To Checkout</button>
                         </div>
                       </div>
                     </div>
@@ -284,32 +284,14 @@
 					</div>
 
 				</div>
-<!-- 
-				<div class="border-top copyright">
-					<div class="row pt-4">
-						<div class="col-lg-6">
-							<p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co">Untree.co</a> Distributed By <a hreff="https://themewagon.com">ThemeWagon</a>  <!-- License information: https://untree.co/license/ -->
-            <!-- </p> -->
-						<!-- </div> --> 
-<!-- 
-						<div class="col-lg-6 text-center text-lg-end">
-							<ul class="list-unstyled d-inline-flex ms-auto">
-								<li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
-								<li><a href="#">Privacy Policy</a></li>
-							</ul>
-						</div>
 
-					</div>
-				</div>
-
-			</div>
-		</footer> -->
 		<!-- End Footer Section -->	
 
 
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/tiny-slider.js"></script>
-		<script src="js/custom.js"></script>
+		<!-- <script src="js/custom.js"></script> -->
+		<script src="./js/app.js"></script>
 	</body>
 
 </html>

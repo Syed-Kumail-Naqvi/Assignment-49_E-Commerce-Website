@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Navbar Styling */
+
+.navbar {
+  width: 100%;
+  background-color: rgb(59,93,80);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.navbar .logo {
+  font-size: 24px;
+}
+
+.navbar .user-info {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .user-info span {
+  margin-right: 10px;
+}
+
+.navbar .user-info img {
+  border-radius: 50%;
+}
+svg {
+  width: 30px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+
+    margin-top: 80px;
+    width: 200px;
+    background-color: rgb(17, 99, 61);
+    padding: 25px;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: #0cac0c;
+}
+
+/* Main Content Styles */
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+  /* width: 100%; */
+  background-color: rgb(239,242,241);
+  border: 1px rgb(239,242,241) solid;
+  margin-top: 150px;
+}
+
+.main-content h1 {
+  margin-bottom: 20px;
+  /* background-color: rgb(37,41,46); */
+}
+
+/* Table Styles */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.data-table th,
+.data-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.data-table th {
+  background-color: #34495e;
+  color: white;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.data-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    position: relative;
+    height: auto;
+    display: none;
+    margin-top: 70px;
+  }
+  .main-content {
+    margin-left: 0;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .data-table {
+    font-size: 8px;
+  }
+  .data-table th,
+  .data-table td {
+    padding: 6px;
+  }
+}
+button {
+  background-color: red;
+  color: white;
+  padding: 3px;
+  border: none;
+  border-radius: 2px;
+  width: 50px;
+  font-size: 8px;
+}
