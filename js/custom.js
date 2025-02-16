@@ -87,11 +87,11 @@ var currentUser = JSON.parse(window.localStorage.getItem("currentUser"));
 var getData = window.localStorage.getItem("userdata");
 var getParseData = JSON.parse(getData);
 
-var rafOrder = JSON.parse(window.localStorage.getItem('PrintOrder'));
+var rafOrder = JSON.parse(window.localStorage.getItem('PrintOrder')) || [];
 
 function add(e) {
-	var idNode = e.parentNode.childNodes[2].textContent;
-    console.log(e.parentNode);
+	var idNode = e.parentNode.parentNode.childNodes[3].innerText;
+    console.log(idNode);
     
 	console.log(idNode);
 	for (var a = 0; a < itemsData.length; a++) {
