@@ -16,28 +16,28 @@ var itemsData = [
     ,
     {
         id: 3,
-        Name: "Kruzo Aero Chair",
+        Name: "Kruzo Aero Chair 03",
         image: "./images/product-2.png",
         price: "78.00"
     }
     ,
     {
         id: 4,
-        Name: "Ergonomic Chair",
+        Name: "Ergonomic Chair 04",
         image: "./images/product-3.png",
         price: "43.00"
     }
 	,
     {
         id: 5,
-        Name: "Nordic Chair 01",
+        Name: "Nordic Chair 05",
         image: "./images/product-3.png",
         price: "50.00"
     }
 	,
     {
         id: 6,
-        Name: "Nordic Chair 02",
+        Name: "Nordic Chair 06",
         image: "./images/product-1.png",
         price: "50.00"
     }
@@ -129,48 +129,48 @@ function add(e) {
 // 	};
 // 	tinyslider();
 
-// 	var sitePlusMinus = function() {
+	var sitePlusMinus = function() {
 
-// 		var value,
-//     		quantity = document.getElementsByClassName('quantity-container');
+		var value,
+    		quantity = document.getElementsByClassName('quantity-container');
 
-// 		function createBindings(quantityContainer) {
-// 	      var quantityAmount = quantityContainer.getElementsByClassName('quantity-amount')[0];
-// 	      var increase = quantityContainer.getElementsByClassName('increase')[0];
-// 	      var decrease = quantityContainer.getElementsByClassName('decrease')[0];
-// 	      increase.addEventListener('click', function (e) { increaseValue(e, quantityAmount); });
-// 	      decrease.addEventListener('click', function (e) { decreaseValue(e, quantityAmount); });
-// 	    }
+		function createBindings(quantityContainer) {
+	      var quantityAmount = quantityContainer.getElementsByClassName('quantity-amount')[0];
+	      var increase = quantityContainer.getElementsByClassName('increase')[0];
+	      var decrease = quantityContainer.getElementsByClassName('decrease')[0];
+	      increase.addEventListener('click', function (e) { increaseValue(e, quantityAmount); });
+	      decrease.addEventListener('click', function (e) { decreaseValue(e, quantityAmount); });
+	    }
 
-// 	    function init() {
-// 	        for (var i = 0; i < quantity.length; i++ ) {
-// 						createBindings(quantity[i]);
-// 	        }
-// 	    };
+	    function init() {
+	        for (var i = 0; i < quantity.length; i++ ) {
+						createBindings(quantity[i]);
+	        }
+	    };
 
-// 	    function increaseValue(e, quantityAmount) {
-// 	        value = parseInt(quantityAmount.value, 10);
+	    function increaseValue(e, quantityAmount) {
+	        value = parseInt(quantityAmount.value, 10);
 
-// 	        console.log(quantityAmount, quantityAmount.value);
+	        console.log(quantityAmount, quantityAmount.value);
 
-// 	        value = isNaN(value) ? 0 : value;
-// 	        value++;
-// 	        quantityAmount.value = value;
-// 	    }
+	        value = isNaN(value) ? 0 : value;
+	        value++;
+	        quantityAmount.value = value;
+	    }
 
-// 	    function decreaseValue(e, quantityAmount) {
-// 	        value = parseInt(quantityAmount.value, 10);
+	    function decreaseValue(e, quantityAmount) {
+	        value = parseInt(quantityAmount.value, 10);
 
-// 	        value = isNaN(value) ? 0 : value;
-// 	        if (value > 0) value--;
+	        value = isNaN(value) ? 0 : value;
+	        if (value > 0) value--;
 
-// 	        quantityAmount.value = value;
-// 	    }
+	        quantityAmount.value = value;
+	    }
 	    
-// 	    init();
+	    init();
 		
-// 	};
-// 	sitePlusMinus();
+	};
+	sitePlusMinus();
 
 
 // })()

@@ -76,13 +76,17 @@ svg {
   margin: 20px 0;
 }
 
-.sidebar ul li a {
+.sidebar ul li a, span  {
   color: white;
   text-decoration: none;
   font-size: 18px;
   display: block;
   padding: 10px;
   transition: background-color 0.3s ease;
+}
+span:hover {
+  background-color: #0cac0c;
+  cursor: pointer;
 }
 
 .sidebar ul li a:hover {
@@ -130,6 +134,7 @@ svg {
 .data-table tr:hover {
   background-color: #ddd;
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
