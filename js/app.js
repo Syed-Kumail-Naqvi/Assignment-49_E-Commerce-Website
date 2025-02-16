@@ -62,7 +62,7 @@ function order() {
       }
       console.log("hellos")
       for (var l = 0; l < getOrder.length; l++) {
-        getParseData[p].CardId.push(getOrder[l]);
+        getParseData[p].id.push(getOrder[l]);
         console.log(getOrder[l])
       }
       // getOrder.splice(0)
