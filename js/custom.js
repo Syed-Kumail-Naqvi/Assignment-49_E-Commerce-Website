@@ -65,16 +65,20 @@ for (var i = 0 ; i < itemsData.length ; i++){
 
 		<div class="col-12 col-md-4 col-lg-3 mb-5">
 
+                        
 						<a class="product-item" href="#">
+                            
 							<img src="${itemsData[i].image}" class="img-fluid product-thumbnail">
 							<h3 class="product-title">${itemsData[i].id}</h3>
 							<h3 class="product-title">${itemsData[i].Name}</h3>
 							<strong class="product-price">$${itemsData[i].price}</strong> 
 
-								<span class="icon-cross">
+							<span class="icon-cross">
 								<img src="images/cross.svg" class="img-fluid" onclick = "add(this)">
-							</span> 
+							</span>
+
 						</a>
+                        
 					</div>
 	`
 }
@@ -83,10 +87,12 @@ var currentUser = JSON.parse(window.localStorage.getItem("currentUser"));
 var getData = window.localStorage.getItem("userdata");
 var getParseData = JSON.parse(getData);
 
-var rafOrder = JSON.parse(window.localStorage.getItem('PrintOrder') || '[]');
+var rafOrder = JSON.parse(window.localStorage.getItem('PrintOrder'));
 
 function add(e) {
 	var idNode = e.parentNode.childNodes[2].textContent;
+    console.log(e.parentNode);
+    
 	console.log(idNode);
 	for (var a = 0; a < itemsData.length; a++) {
 	  if (idNode == itemsData[a].id) {
