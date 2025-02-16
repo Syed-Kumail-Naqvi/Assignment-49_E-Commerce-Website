@@ -73,10 +73,11 @@ function order() {
       window.localStorage.setItem("userdata", JSON.stringify(getParseData));
       alert("Order Submitted ✅");
 
-
+      window.location.href = "main.html"
     }
+    
   }
-  //  window.location.href = "checkout.html"
+   
 }
 
 function deleted(e) {
