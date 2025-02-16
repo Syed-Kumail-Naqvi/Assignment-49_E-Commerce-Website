@@ -48,7 +48,7 @@ function logIn() {
     var login = false;
   
     if(lEmail === "admin@gmail.com" && lPassword === "123456"){
-      window.location.href="dashBoard.html"
+      window.location.href="dashboard.html"
     } else{
       for (var k = 0;k < getParseData.length; k++) {
         console.log(k)
