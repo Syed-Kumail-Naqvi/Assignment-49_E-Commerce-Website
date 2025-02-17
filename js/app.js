@@ -180,7 +180,7 @@ function order() {
   localStorage.setItem("PrintOrder", JSON.stringify(getOrder));
   localStorage.setItem("userdata", JSON.stringify(getParseData));
 
-  alert("Order Submitted ✅");
+  alert("Order Placed Succesfully ✅");
   // window.location.href = "main.html";
 
   // Update UI
