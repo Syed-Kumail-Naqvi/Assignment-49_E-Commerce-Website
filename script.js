@@ -48,6 +48,15 @@ function logIn() {
     var login = false;
   
     if(lEmail === "admin@gmail.com" && lPassword === "123456"){
+      var user = {
+        fullName: 'admin',
+        email: 'admin@gmail.com',
+        city: 'Karachi',
+        phone: '123456789',
+        password: '123456'
+      };
+      userdata.push(user);
+      window.localStorage.setItem("userdata", JSON.stringify(userdata));
       window.location.href="dashboard.html"
     } else{
       for (var k = 0;k < getParseData.length; k++) {

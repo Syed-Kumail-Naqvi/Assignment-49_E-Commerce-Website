@@ -74,6 +74,11 @@ function order() {
       alert("Order Submitted ✅");
 
       window.location.href = "main.html"
+
+      cardArea.innerHTML = `
+          <h2>Empty</h2>
+      `
+      document.getElementById("order").style.display = "none"
     }
     
   }
