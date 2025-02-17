@@ -110,7 +110,7 @@ var totalAmountElement = document.getElementById("totalAmount");
 
 // 🟢 Handle empty order case
 if (!getOrder || getOrder.length === 0) {
-  cardArea.innerHTML = `<h2>Empty</h2>`;
+  cardArea.innerHTML = `<h2>There is no Product to Checkout! Please Add Products to Your Cart</h2>`;
   if (orderSection) orderSection.style.display = "none";
 } else {
   renderOrders();
@@ -184,7 +184,7 @@ function order() {
   // window.location.href = "main.html";
 
   // Update UI
-  cardArea.innerHTML = `<h2>Empty</h2>`;
+  cardArea.innerHTML = `<h2>There are no carts to add please add products</h2>`;
   if (orderSection) orderSection.style.display = "none";
   if (totalAmountElement) totalAmountElement.innerText = "Total Amount: $0.00";
 
