@@ -108,7 +108,7 @@ var cardArea = document.getElementById("cardarea");
 var orderSection = document.getElementById("order");
 var totalAmountElement = document.getElementById("totalAmount");
 
-// 🟢 Handle empty order case
+// Handle empty order case
 if (!getOrder || getOrder.length === 0) {
   cardArea.innerHTML = `<h2>There is no Product to Checkout! Please Add Products to Your Cart</h2>`;
   if (orderSection) orderSection.style.display = "none";
@@ -116,7 +116,7 @@ if (!getOrder || getOrder.length === 0) {
   renderOrders();
 }
 
-// 🟢 Function to render order items & calculate total cost
+// Function to render order items & calculate total cost
 function renderOrders() {
   let content = "";
   let totalAmount = 0;
@@ -158,7 +158,7 @@ function renderOrders() {
   }
 }
 
-// 🟢 Function to submit order
+// Function to submit order
 function order() {
   if (!currentUser) {
     alert("You must be logged in to place an order!");
@@ -193,12 +193,12 @@ if (currentUser) {
   if (currentUser.email === "admin@gmail.com") {
     window.location.href = "dashboard.html"; // Redirect admin to Dashboard
   } else {
-    window.location.href = "main.html"; // Redirect regular users to Main Page
+    window.location.href = "thankyou.html"; // Redirect regular users to Main Page
   }
 }
 }
 
-// 🟢 Function to delete an order item
+// Function to delete an order item
 function deleted(index) {
   getOrder.splice(index, 1);
   localStorage.setItem("PrintOrder", JSON.stringify(getOrder));
@@ -212,7 +212,7 @@ function deleted(index) {
   }
 }
 
-// 🟢 Function to update quantity (Placeholder function, needs proper logic)
+// Function to update quantity (Placeholder function, needs proper logic)
 function updateQuantity(index, change) {
   alert(`Quantity updated for item ${index} by ${change}`);
 }
