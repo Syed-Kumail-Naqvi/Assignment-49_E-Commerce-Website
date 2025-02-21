@@ -110,7 +110,7 @@ var totalAmountElement = document.getElementById("totalAmount");
 
 // Handle empty order case
 if (!getOrder || getOrder.length === 0) {
-  cardArea.innerHTML = `<h2>There is no Product to Checkout! Please Add Products to Your Cart</h2>`;
+  cardArea.innerHTML = `<h2>Empty</h2>`;
   if (orderSection) orderSection.style.display = "none";
 } else {
   renderOrders();
@@ -184,13 +184,15 @@ function order() {
   // window.location.href = "main.html";
 
   // Update UI
-  cardArea.innerHTML = `<h2>There are no carts to add please add products</h2>`;
+  cardArea.innerHTML = `<h2>Empty</h2>`;
   if (orderSection) orderSection.style.display = "none";
   if (totalAmountElement) totalAmountElement.innerText = "Total Amount: $0.00";
 
   // Redirect users based on their role
 if (currentUser) {
   if (currentUser.email === "admin@gmail.com") {
+    alert(`Redirecting To Dashboard, Dear Admin!`);
+    
     window.location.href = "dashboard.html"; // Redirect admin to Dashboard
   } else {
     window.location.href = "thankyou.html"; // Redirect regular users to Main Page

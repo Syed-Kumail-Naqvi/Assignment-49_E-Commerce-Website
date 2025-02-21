@@ -165,7 +165,15 @@ function logIn() {
 
   // Check for admin login
   if (lEmail === "admin@gmail.com" && lPassword === "123456") {
-    localStorage.setItem("currentUser", JSON.stringify({ email: "admin@gmail.com", role: "admin" }));
+    var user = {
+      fullName : 'admin',
+      email : lEmail,
+      city : 'Karachi',
+      phone : '03345425439',
+      password : lPassword
+    }
+    localStorage.setItem("currentUser", JSON.stringify(user));
+    // window.localStorage.setItem("userdata", JSON.stringify(user));
     alert("Welcome, Admin!");
     window.location.href = "dashboard.html";
     return;

@@ -69,10 +69,12 @@
 var table = document.getElementById('Table');
 var table2 = document.getElementById('table');
 var getData = window.localStorage.getItem("userdata");
-var getParseData = JSON.parse(getData);
+var getParseData = JSON.parse(getData); // Get All User's Data
 var currentUser = JSON.parse(localStorage.getItem("currentUser")); // Get logged-in user
 
-console.log(getParseData);
+console.log(`User Data`,getParseData);
+console.log(`Current User`, currentUser);
+
 
 // Display Users Table
 for (var i = 0; i < getParseData.length; i++) {
