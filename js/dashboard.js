@@ -75,7 +75,6 @@ var currentUser = JSON.parse(localStorage.getItem("currentUser")); // Get logged
 console.log(`User Data`,getParseData);
 console.log(`Current User`, currentUser);
 
-
 // Display Users Table
 for (var i = 0; i < getParseData.length; i++) {
     table.innerHTML += `
@@ -91,10 +90,15 @@ for (var i = 0; i < getParseData.length; i++) {
 }
 
 // Function to delete user
+
+
 function deleteUser(e) {
+    
+    
     var emailToDelete = e.parentNode.parentNode.childNodes[7].textContent;
     console.log(emailToDelete);
 
+    
     for (var a = 0; a < getParseData.length; a++) {
         if (emailToDelete == getParseData[a].email) {
             getParseData.splice(a, 1);
